@@ -1,0 +1,13 @@
+body{
+    height: 10000px;
+}
+
+.myHeader{
+    position: fixed;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+    background-color: rgb(255, 0, 106);
+}
