@@ -1,17 +1,47 @@
 body{
-    height: 100%;
     margin: 0px;
+    box-sizing: border-box;
 }
+
+
+/*belongs to the header*/
 
 .header{
     position: fixed;
-    height: 100px;
     top: 0px;
     left: 0px;
     width: 100%;
     z-index: 1;
-    background-color: rgb(255, 0, 106);
+    background-color: #3a3e46;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
 }
+
+.logoText{
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.headerOptions{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+.headerOptions span{
+    margin-left: 20px;
+    font-family: sans-serif;
+}
+
+
+
 
 .welcomeContentDiv{
     background-color: aqua;
@@ -32,3 +62,4 @@ body{
     height: 100%;
     background-color: orange;
 }
+
