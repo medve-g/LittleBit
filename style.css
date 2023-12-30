@@ -43,8 +43,24 @@ body{
 
 /*First content section*/
 
-.firstContntSection{
+.firstContentSection{
     background-color: green;
     height: 90.3vh;
     margin-top: 89px;
+}
+
+/*Second content section*/
+.secondContentSection{
+    background-color: red;
+    height: 90.3vh;
+}
+
+.thirdContentSection{
+    background-color: pink;
+    height: 90.3vh;
+}
+
+.fourthContentSection{
+    background-color: yellow;
+    height: 90.3vh;
 }
