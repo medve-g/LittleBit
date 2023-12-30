@@ -38,6 +38,7 @@ body{
 .headerOptions span{
     margin-left: 20px;
     font-family: sans-serif;
+    cursor: pointer;
 }
 
 
