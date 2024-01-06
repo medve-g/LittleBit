@@ -4,7 +4,7 @@ body{
 }
 
 
-/*belongs to the header*/
+/*Belongs to the header*/
 
 .header{
     position: fixed;
@@ -56,11 +56,13 @@ body{
     height: 90.3vh;
 }
 
+/*Third content section*/
 .thirdContentSection{
     background-color: pink;
     height: 90.3vh;
 }
 
+/*Fourth content section*/
 .fourthContentSection{
     background-color: yellow;
     height: 90.3vh;

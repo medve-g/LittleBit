@@ -1,9 +1,11 @@
+//Variables for the page parts
+
 let firstContentSection = document.getElementById("firstDiv");
 let secondContentSection = document.getElementById("secondDiv");
 let thirdContentSection = document.getElementById("thirdDiv");
 let fourthContentSection = document.getElementById("fourthDiv");
 
-
+//Scrolling into view behavior for header elements
 document.getElementById("navOpt1").addEventListener("click", function(){
     firstContentSection.scrollIntoView({ behavior: "smooth" , block: "end"});
 });
