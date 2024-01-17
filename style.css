@@ -1,3 +1,10 @@
+:root {
+    --about-us-part: #8FD3B5;
+    --references-part : #6EB7A9;
+    --packeges-part: #559A9B;
+    --socials-part: #447E88;
+  }
+
 body{
     margin: 0px;
     box-sizing: border-box;
@@ -33,6 +40,7 @@ body{
     display: flex;
     justify-content: end;
     margin-right: 20px;
+    letter-spacing: 1px;
 }
 
 .headerOptions span{
@@ -45,25 +53,24 @@ body{
 /*First content section*/
 
 .firstContentSection{
-    background-color: green;
-    height: 90.3vh;
-    margin-top: 89px;
+    background-color: var(--about-us-part);
+    height: 100vh;
 }
 
 /*Second content section*/
 .secondContentSection{
-    background-color: red;
-    height: 90.3vh;
+    background-color: var(--references-part);
+    height: 100vh;
 }
 
 /*Third content section*/
 .thirdContentSection{
-    background-color: pink;
-    height: 90.3vh;
+    background-color: var(--packeges-part);
+    height: 100vh;
 }
 
 /*Fourth content section*/
 .fourthContentSection{
-    background-color: yellow;
-    height: 90.3vh;
+    background-color: var(--socials-part);
+    height: 100vh;
 }
