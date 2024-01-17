@@ -1,5 +1,4 @@
 //Variables for the page parts
-
 let firstContentSection = document.getElementById("firstDiv");
 let secondContentSection = document.getElementById("secondDiv");
 let thirdContentSection = document.getElementById("thirdDiv");
@@ -21,3 +20,21 @@ document.getElementById("navOpt3").addEventListener("click", function(){
 document.getElementById("navOpt4").addEventListener("click", function(){
     fourthContentSection.scrollIntoView({ behavior: "smooth" , block: "end"});
 });
+
+//scrolling transition trigger for header
+const headerElement = document.querySelector('.header');
+const firstSection = document.querySelector('.firstContentSection');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            headerElement.classList.remove('headerOutOfView');
+        }else{
+            headerElement.classList.add('headerOutOfView');
+        }
+    })
+},{
+    threshold: 0.5,
+})
+
+observer.observe(firstSection)
