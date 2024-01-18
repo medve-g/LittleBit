@@ -1,75 +1,212 @@
-/* Basic Reset and Styles */
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+:root {
+    --about-us-part: #8FD3B5;
+    --references-part : #6EB7A9;
+    --packeges-part: #559A9B;
+    --socials-part: #447E88;
 }
 
-/* General Styles */
+/* Törzs */
 body {
-font-family: Arial, sans-serif;
-line-height: 1.6;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
-/* Header Styles */
+/* Fejléc */
 header {
-background-color: #333;
-color: #fff;
-padding: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
 }
 
 .logo {
-font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .nav-links {
-list-style-type: none;
+    list-style-type: none;
 }
 
 .nav-links li {
-display: inline;
-margin-right: 20px;
+    display: inline;
+    margin-right: 20px;
 }
 
 .nav-links a {
-color: #fff;
-text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 
-/* Hero Section Styles */
-.hero {
+
+
+/*Belongs to the header*/
+
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+    background-color: #3a3e46;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+
+.logoText{
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.headerOptions{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+.headerOptions span{
+    margin-left: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+
+
+
+/*First content section*/
+
+.firstContentSection{
+    background-color: var(--about-us-part);
+    height: 90.3vh;
+    margin-top: 89px;
+}
+
+/*Second content section*/
+.secondContentSection{
+    background-color: var(--references-part);
+    height: 90.3vh;
+}
+
+/*Third content section*/
+.thirdContentSection{
+    background-color: var(--packeges-part);
+    height: 90.3vh;
+}
+
+/*Fourth content section*/
+.fourthContentSection{
+    background-color: var(--socials-part);
+    height: 90.3vh;
+}
+
+.packages {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.package {
+border: 1px solid #ccc;
+border-radius: 10px;
+padding: 15px;
 text-align: center;
-padding: 100px 20px;
-background-image: url('images/logo.png');
-background-size: cover;
-color: #fff;
 }
 
-.hero h1 {
-font-size: 3rem;
-margin-bottom: 20px;
+.package img {
+max-width: 100%;
+border-radius: 5px;
+margin-bottom: 10px;
 }
 
-.hero p {
-font-size: 1.2rem;
-margin-bottom: 30px;
+.price {
+font-weight: bold;
+color: #635B57;
+margin-top: 10px;
 }
 
 .btn {
-display: inline-block;
 padding: 10px 20px;
-background-color: #8EFFAE;
+background-color: #007bff;
 color: #fff;
-text-decoration: none;
+border: none;
 border-radius: 5px;
+cursor: pointer;
 transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-background-color: #50FF8A;
+background-color: #0056b3;
 }
 
-/* Footer Styles */
+
+/*img*/
+img{
+    width: 20rem;
+    height: auto;
+}
+
+input{
+    border: none;
+    appearance: none;
+    padding: .3rem;
+    border-radius: .1rem;
+    width: 12rem;
+    outline: none;
+    
+}
+
+.inp{
+    position: relative;
+    left: calc(50% - (12rem * 3 + 0.6rem) / 2);
+    margin-top: 2rem;
+    padding: auto;
+}
+
+.orderbtn{
+    text-align: center;
+    position: absolute;
+    width: 8rem;
+    left: calc(50% - 8rem  / 2);
+}
+
+h2{
+    position: relative;
+    display: flex;
+    left: calc(50% - 5rem / 2 - 2rem);
+    width: 5rem;
+}
+h1 {
+    position: relative;
+    display: flex;
+    left: calc(50% - 20rem / 2);
+    width: 20rem;
+}
+
+ul{
+    font-size: 1.2rem;
+    padding-left: 10%;
+}
+
+h3{
+    padding-left: 5%;
+}
+
+.content{
+    padding-left: 5%;
+    text-align: justify;
+    width: fit-content;
+    display: contents;
+    font-size: 1.1rem;
+}
+
+/* Lábléc */
 footer {
 text-align: center;
 padding: 20px;

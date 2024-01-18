@@ -1,37 +1,59 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>LittleBit</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-        <div class="logo">
-            <a href="index.html">LittleBit</a>
+    <div class="header">
+        <div class="logoText">
+            LITTLEBIT
         </div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        </nav>
-    </header>
+        <div class="headerOptions">
+            <span id="navOpt1">Rólunk</span>
+            <span id="navOpt2">Referenciák</span>
+            <span id="navOpt3">Csomagok</span>
+            <span id="navOpt4">Elérhetőségek</span>
+        </div>
+    </div>
+    <div id="firstDiv" class="firstContentSection">
 
-    <section class="hero">
-        <!-- Hero content goes here -->
-        <h1>Welcome to LittleBit</h1>
-        <p>Your trusted partner in [Industry/Services]</p>
-        <a href="#services" class="btn">Explore Services</a>
-    </section>
+    </div>
+    <div id="secondDiv" class="secondContentSection">
 
-    <!-- Other sections (About, Services, Testimonials, Contact, etc.) would go here -->
-
+    </div>
+    <div id="thirdDiv" class="thirdContentSection">
+        <section class="packages" id="packages">
+            <div class="package">
+                <img src="images/start.png" alt="Csomag 1">
+                <h2>BitStartup</h2>   
+                <p>Csomag kisvállalkozóknak</p>
+                <p class="price">$99.99</p>
+                <button class="btn" onclick="window.location.href='bitstartup.html'">Részletek</button>
+            </div>
+        
+            <div class="package">
+                <img src="images/pro.png" alt="Csomag 2">
+                <h2>ProConnect</h2>
+                <p>Remek csomag vállalkozásoknak</p>
+                <p class="price">$249.99</p>
+                <button class="btn" onclick="window.location.href='proconnect.html'">Részletek</button>
+            </div>
+        
+            </section>
+    </div>
     <footer>
-        <p>&copy; 2023 LittleBit. All rights reserved.</p>
+        <p>&copy; 2023 LittleBit. Minden jog fenntartva.</p>
+        <p>Cím: 5600, Békéscsaba, Kazinczy utca 7.</p>
+        <p>telefon: +36-01-234-5678</p>
+        <p>e-mail: Little_support@bit.com</p>
     </footer>
-<script src="script.js"></script>
+    
+    <script src="script.js"></script>
 </body>
+
 </html>
