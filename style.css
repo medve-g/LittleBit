@@ -10,6 +10,7 @@
 body{
     margin: 0px;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 
@@ -39,7 +40,6 @@ body{
 
 .logoText{
     letter-spacing: 1px;
-    font-family: sans-serif;
     font-weight: bold;
     font-size: 25px;
     margin-top: 30px;
@@ -79,12 +79,151 @@ body{
 .firstContentSection{
     background-color: var(--about-us-part);
     height: 100vh;
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
 }
+
+.logoPicture{
+    width: 100px;
+    height: auto;
+    margin-left: 15px;
+}
+
+.contentPlaceholder{
+    color: var(--navbar-fcolor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentPlaceholder h1{
+    font-size: 100px;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--navbar-bgcolor);
+    margin-top: 0px;
+}
+
+.contentPlaceholder p{
+    width: 70%;
+    font-size: 25px;
+    text-align: justify;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: var(--navbar-fcolor);
+    color: var(--navbar-bgcolor);
+}
+
+.aboutUsSection{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filesLittleBitted{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.filesLittleBitted h2{
+    font-size: 40px;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: var(--navbar-bgcolor);
+}
+
+.numberHolder{
+    font-size: 70px;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: var(--navbar-bgcolor);
+}
+
 
 /*Second content section*/
 .secondContentSection{
     background-color: var(--references-part);
     height: 100vh;
+}
+
+.referencesSectionHolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.referencesSectionHolder h1{
+    font-size: 100px;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--navbar-bgcolor);
+    color: var(--navbar-fcolor);
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.referenceImages{
+    width:  400px;
+    height: 200px;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+
+.threeReferencesPlaceholder p{
+    width: 60%;
+    font-size: 20px;
+    text-align: justify;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: var(--navbar-fcolor);
+    color: var(--navbar-bgcolor);
+    margin-top: 0px;
+}
+
+.threeReferencesPlaceholder h3{
+    font-size: 40px;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: var(--navbar-bgcolor);
+    color: var(--navbar-fcolor);
+}
+
+.threeReferencesPlaceholder div{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    height: 100%;    
+    align-items: center;
+    opacity: 1;
+    transition: all 0.5s ease;
+    transform: translateY(0);
+}
+
+.hiddenDiv{
+    opacity: 0 !important;
+    transform: translateY(20%) !important;
+}
+
+.delay:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.delay:nth-child(3){
+    transition-delay: 400ms;
+}
+
+.threeReferencesPlaceholder{
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: space-around;
+    height: 500px;
 }
 
 /*Third content section*/

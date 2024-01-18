@@ -25,7 +25,7 @@ document.getElementById("navOpt4").addEventListener("click", function(){
 const headerElement = document.querySelector('.header');
 const firstSection = document.querySelector('.firstContentSection');
 
-const observer = new IntersectionObserver(entries => {
+const observerForFirstContentSection = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
             headerElement.classList.remove('headerOutOfView');
@@ -37,4 +37,49 @@ const observer = new IntersectionObserver(entries => {
     threshold: 0.8,
 })
 
-observer.observe(firstSection)
+observerForFirstContentSection.observe(firstSection)
+
+//number changing code
+const numberHolder = document.querySelector('.numberHolder');
+let currentNumber;
+if(localStorage.getItem("currentNumber") == null){
+    currentNumber = 2352;
+}else{
+    currentNumber = localStorage.getItem("currentNumber");
+}
+
+function updateCounter() {
+  const randomValue = Math.floor(Math.random() * (9 - 1 + 1)) + 1;;
+  addOneWithDelay(randomValue);
+  setTimeout(updateCounter, Math.floor(Math.random() * (10000 - 5000 + 1)) + 5000);
+}
+
+function addOneWithDelay(times) {
+  for (let i = 0; i < times; i++) {
+    setTimeout(() => {
+      currentNumber++;
+      numberHolder.innerHTML = currentNumber;
+      localStorage.setItem("currentNumber", currentNumber)
+    }, (i + 1) * 100);
+  }
+}
+
+setTimeout(5000);
+updateCounter();
+
+//Scrolling into view behavior for references
+const hiddenDivs = document.querySelectorAll('.hiddenDiv')
+
+const observerForSecondContentSection = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if(entry.isIntersecting){
+            entry.target.classList.remove('hiddenDiv');
+            console.log("latom")
+        }
+    })
+},{
+    threshold: 1,
+})
+
+hiddenDivs.forEach((el) => observerForSecondContentSection.observe(el));
