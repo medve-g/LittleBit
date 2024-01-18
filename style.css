@@ -3,6 +3,8 @@
     --references-part : #6EB7A9;
     --packeges-part: #559A9B;
     --socials-part: #447E88;
+    --navbar-bgcolor: #3a3e46;
+    --navbar-fcolor: aliceblue;
   }
 
 body{
@@ -19,8 +21,8 @@ body{
     left: 0px;
     width: 100%;
     z-index: 1;
-    background-color: #3a3e46;
-    color: aliceblue;
+    background-color: var(--navbar-bgcolor);
+    color: var(--navbar-fcolor);
     display: flex;
     align-items: center;
     transition: all 0.75s ease;
@@ -54,9 +56,21 @@ body{
 }
 
 .headerOptions span{
+    font-size: 18px;
+    text-align: center;
     margin-left: 20px;
+    padding: 5px 10px 5px 10px; 
     font-family: sans-serif;
     cursor: pointer;
+    border-radius: 10px;
+    background-color: var(--navbar-bgcolor);
+    color: var(--navbar-fcolor);
+    transition: all 0.25s ease;
+}
+
+.headerOptions span:hover{
+    background-color: var(--navbar-fcolor);
+    color: var(--navbar-bgcolor);
 }
 
 
@@ -64,7 +78,7 @@ body{
 
 .firstContentSection{
     background-color: var(--about-us-part);
-    height: 101vh;
+    height: 100vh;
 }
 
 /*Second content section*/
