@@ -73,7 +73,6 @@ body{
     color: var(--navbar-bgcolor);
 }
 
-
 /*First content section*/
 
 .firstContentSection{
@@ -229,11 +228,115 @@ body{
 /*Third content section*/
 .thirdContentSection{
     background-color: var(--packeges-part);
-    height: 100vh;
+    height: 110vh;
 }
+
+.thirdContentSection h1{
+    font-size: 100px;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--navbar-bgcolor);
+    color: var(--navbar-fcolor);
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+
+.packages{
+    display: flex;
+    justify-content: space-around;
+}
+
+.package{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid var(--navbar-fcolor) 2px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,1);
+}
+
+.package h2{
+    font-size: 35px;
+    color: var(--navbar-fcolor);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: var(--navbar-bgcolor);
+}
+
+.package p{
+    font-size: 20px;
+    color: var(--navbar-fcolor);
+}
+
+.package button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #3498db;
+    border: 2px solid rgba(255,255,255,1);
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.package button:hover {
+    background-color: #2980b9;
+    border: 2px solid rgba(255,255,255,1);
+    color: #fff;
+}
+
 
 /*Fourth content section*/
 .fourthContentSection{
     background-color: var(--socials-part);
-    height: 100vh;
+    height: 16vh;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/*Media queries*/
+@media screen and (max-width: 360px) {
+    .header{
+        position: static;
+        opacity: 1;
+        filter: blur(0);
+    }
+
+    .headerOptions{
+        display: none;
+    }
+
+    .contentPlaceholder h1{
+        font-size: 30px !important;
+    }
+
+    .contentPlaceholder h1 img{
+        display: none;
+    }
+
+    .firstContentSection{
+        position: static;
+        padding: 0;
+    }
+    
+    .contentPlaceholder p{
+        font-size: 20px !important;
+    }
+
+
+    .secondContentSection{
+        display: none;
+    }
+
+    .thirdContentSection{
+        display: none;
+    }
+
 }
