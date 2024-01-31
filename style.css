@@ -1,8 +1,7 @@
 :root {
-    --about-us-part: #8FD3B5;
-    --references-part : #6EB7A9;
-    --packeges-part: #559A9B;
-    --socials-part: #447E88;
+    --about-us-part: #559A9B;
+    --references-part : #559A9B;
+    --packeges-part: #6EB7A9;
     --navbar-bgcolor: #3a3e46;
     --navbar-fcolor: aliceblue;
   }
@@ -92,26 +91,30 @@ body{
 .contentPlaceholder{
     color: var(--navbar-fcolor);
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .contentPlaceholder h1{
     font-size: 100px;
     text-align: center;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--navbar-bgcolor);
+    text-shadow: 0px 0px 6px rgba(0,0,0,0.65);
     margin-top: 0px;
 }
 
-.contentPlaceholder p{
+.aboutUsText{
     width: 70%;
     font-size: 25px;
     text-align: justify;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     background-color: var(--navbar-fcolor);
     color: var(--navbar-bgcolor);
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+
+.contentPlaceholder p{
+    margin: 0px;
 }
 
 .aboutUsSection{
@@ -123,23 +126,36 @@ body{
 }
 
 .filesLittleBitted{
-    position: relative;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+.leftSide{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .filesLittleBitted h2{
     font-size: 40px;
-    -webkit-text-stroke-width: 0.7px;
-    -webkit-text-stroke-color: var(--navbar-bgcolor);
+    text-shadow: 0px 0px 6px rgba(0,0,0,0.65);
 }
 
 .numberHolder{
     font-size: 70px;
-    -webkit-text-stroke-width: 0.7px;
-    -webkit-text-stroke-color: var(--navbar-bgcolor);
+    text-shadow: 0px 0px 6px rgba(0,0,0,0.65);
+}
+
+/*gradient*/
+.gradient{
+    background: rgb(85,154,155);
+    background: linear-gradient(180deg, rgba(85,154,155,1) 0%, rgba(110,183,169,1) 100%);
+    width: 100%;
+    height: 200px;
 }
 
 
@@ -159,8 +175,7 @@ body{
 .referencesSectionHolder h1{
     font-size: 100px;
     text-align: center;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--navbar-bgcolor);
+    text-shadow: 0px 0px 6px rgba(0,0,0,0.65);
     color: var(--navbar-fcolor);
     margin-top: 100px;
     margin-bottom: 50px;
@@ -175,7 +190,7 @@ body{
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
 }
 
-.threeReferencesPlaceholder p{
+.referencesText{
     width: 60%;
     font-size: 20px;
     text-align: justify;
@@ -183,13 +198,16 @@ body{
     border-radius: 10px;
     background-color: var(--navbar-fcolor);
     color: var(--navbar-bgcolor);
-    margin-top: 0px;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+
+.threeReferencesPlaceholder p{
+    margin: 0px;
 }
 
 .threeReferencesPlaceholder h3{
     font-size: 40px;
-    -webkit-text-stroke-width: 0.7px;
-    -webkit-text-stroke-color: var(--navbar-bgcolor);
+    text-shadow: 0px 0px 6px rgba(0,0,0,0.65);
     color: var(--navbar-fcolor);
 }
 
@@ -228,14 +246,13 @@ body{
 /*Third content section*/
 .thirdContentSection{
     background-color: var(--packeges-part);
-    height: 110vh;
+    height: 100vh;
 }
 
 .thirdContentSection h1{
     font-size: 100px;
     text-align: center;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--navbar-bgcolor);
+    text-shadow: 0px 0px 6px rgba(0,0,0,0.65);
     color: var(--navbar-fcolor);
     margin-top: 0;
     margin-bottom: 80px;
@@ -243,7 +260,8 @@ body{
 
 .packages{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .package{
@@ -260,8 +278,7 @@ body{
 .package h2{
     font-size: 35px;
     color: var(--navbar-fcolor);
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: var(--navbar-bgcolor);
+    text-shadow: 0px 0px 6px rgba(0,0,0,0.65);
 }
 
 .package p{

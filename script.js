@@ -14,7 +14,7 @@ document.getElementById("navOpt2").addEventListener("click", function(){
 });
 
 document.getElementById("navOpt3").addEventListener("click", function(){
-    thirdContentSection.scrollIntoView({ behavior: "smooth" , block: "center"});
+    thirdContentSection.scrollIntoView({ behavior: "smooth" , block: "start"});
 });
 
 document.getElementById("navOpt4").addEventListener("click", function(){
