@@ -3,6 +3,8 @@
     --references-part : #6EB7A9;
     --packeges-part: #559A9B;
     --socials-part: #447E88;
+    --navbar-bgcolor: #3a3e46;
+    --navbar-fcolor: aliceblue;
 }
 
 /* Törzs */
@@ -11,6 +13,7 @@ body {
     line-height: 1.6;
     margin: 0px;
     box-sizing: border-box;
+    color: aliceblue;
 }
 
 /* Fejléc */
@@ -80,31 +83,14 @@ header {
 
 
 
-/*First content section*/
 
-.firstContentSection{
-    background-color: var(--about-us-part);
-    height: 90.3vh;
-    margin-top: 89px;
-}
-
-/*Second content section*/
-.secondContentSection{
-    background-color: var(--references-part);
-    height: 90.3vh;
-}
 
 /*Third content section*/
 .thirdContentSection{
     background-color: var(--packeges-part);
-    height: 90.3vh;
+    height: 120vh;
 }
 
-/*Fourth content section*/
-.fourthContentSection{
-    background-color: var(--socials-part);
-    height: 90.3vh;
-}
 
 .packages {
 display: flex;
@@ -177,16 +163,12 @@ input{
 }
 
 h2{
-    position: relative;
     display: flex;
-    left: calc(50% - 5rem / 2 - 2rem);
-    width: 5rem;
+    justify-content: center;
 }
 h1 {
-    position: relative;
     display: flex;
-    left: calc(50% - 20rem / 2);
-    width: 20rem;
+    justify-content: center;
     margin-top: 0px;
 }
 
@@ -200,11 +182,26 @@ h3{
 }
 
 .content{
-    padding-left: 5%;
+    display: flex;
+    justify-content: left;
+    font-size: 1.2rem;
+}
+
+.aboutUsText{
+    width: 50%;
+    font-size: 1rem;
     text-align: justify;
-    width: fit-content;
-    display: contents;
-    font-size: 1.1rem;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--navbar-fcolor);
+    color: var(--navbar-bgcolor);
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
+
+.aboutUsAlign{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 /* Lábléc */
