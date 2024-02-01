@@ -1,1 +1,0 @@
-alert('A weblap még elkészítésre vár')
